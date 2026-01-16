@@ -1,41 +1,4 @@
-const projectFirstSlider = new Swiper('.project__slider-first', {
-  slidesPerView: 3,
-  spaceBetween: 32,
-  loop: true,
-  navigation: {
-    nextEl: '.service__row.fifth .steps__arrow.next',
-    prevEl: '.service__row.fifth .steps__arrow.prev',
-  },
-});
-const projectSecondSlider = new Swiper('.project__slider-second', {
-  slidesPerView: 3,
-  spaceBetween: 32,
-  loop: true,
-  navigation: {
-    nextEl: '.service__row.fifth.hab .steps__arrow.next',
-    prevEl: '.service__row.fifth.hab .steps__arrow.prev',
-  },
-});
 
-const lettersSlider = new Swiper('.letters__slider', {
-  slidesPerView: 3,
-  spaceBetween: 32,
-  loop: true,
-  navigation: {
-    nextEl: '.letters .steps__arrow.next',
-    prevEl: '.letters .steps__arrow.prev',
-  },
-});
-
-const stepsSlider = new Swiper('.steps__slider', {
-  slidesPerView: 4,
-  spaceBetween: 24,
-  loop: true,
-  navigation: {
-    nextEl: '.steps:not(.letters) .steps__arrow.next',
-    prevEl: '.steps:not(.letters) .steps__arrow.prev',
-  },
-});
 
 const buttonUp = document.querySelector('.button-up');
 
@@ -161,3 +124,42 @@ if (document.querySelector('.phone')) {
     });
   });
 }
+
+const projectFirstSlider = new Swiper('.project__slider-first', {
+  slidesPerView: 3,
+  spaceBetween: 32,
+  loop: true,
+  navigation: {
+    nextEl: '.service__row.fifth .steps__arrow.next',
+    prevEl: '.service__row.fifth .steps__arrow.prev',
+  },
+});
+const projectSecondSlider = new Swiper('.project__slider-second', {
+  slidesPerView: 3,
+  spaceBetween: 32,
+  loop: true,
+  navigation: {
+    nextEl: '.service__row.fifth.hab .steps__arrow.next',
+    prevEl: '.service__row.fifth.hab .steps__arrow.prev',
+  },
+});
+
+const lettersSlider = new Swiper('.letters__slider', {
+  slidesPerView: 3,
+  spaceBetween: 32,
+  loop: true,
+  navigation: {
+    nextEl: '.letters .steps__arrow.next',
+    prevEl: '.letters .steps__arrow.prev',
+  },
+});
+
+const stepsSlider = new Swiper('.steps__slider', {
+  slidesPerView: 4,
+  spaceBetween: 24,
+  loop: true,
+  navigation: {
+    nextEl: '.steps:not(.letters) .steps__arrow.next',
+    prevEl: '.steps:not(.letters) .steps__arrow.prev',
+  },
+});
