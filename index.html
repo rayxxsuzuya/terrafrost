@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="modal">
+    <div class="modal__bg"></div>
+    <div class="modal__window first" id="firstModal">
+      <button class="modal__close">
+        <img class="modal__icon" src="img/icons/close.svg" width="26" height="26" alt="Закрыть">
+      </button>
+      <div class="modal__main">
+        <h2 class="modal__title">Заполните форму и&nbsp;мы свяжемся с вами</h2>
+        <form class="modal__form" action="/">
+          <div class="modal__inner">
+            <div class="modal__item">
+              <label class="modal__label">Как к вам обращаться</label>
+              <div class="modal__wrap">
+                <input class="modal__input" type="text" placeholder="Ваше имя">
+              </div>
+            </div>
+            <div class="modal__item">
+              <label class="modal__label">Номер телефона для связи</label>
+              <div class="modal__wrap">
+                <input class="modal__input phone" type="text" placeholder="+7 (___) ___-__-__">
+              </div>
+            </div>
+            <div class="modal__item">
+              <label class="modal__label">E-mail</label>
+              <div class="modal__wrap">
+                <input class="modal__input" type="email" placeholder="sample@gmail.com">
+              </div>
+            </div>
+            <div class="modal__item">
+              <label class="modal__label">Удобное время для звонка</label>
+              <div class="modal__grid">
+                <select class="modal__select">
+                  <option value="22.12">22.12</option>
+                  <option value="23.12">23.12</option>
+                  <option value="24.12">24.12</option>
+                </select>
+                <select class="modal__select">
+                  <option value="15:30">15:30</option>
+                  <option value="15:45">15:45</option>
+                  <option value="16:00">16:00</option>
+                </select>
+              </div>
+            </div>
+            <div class="modal__item">
+              <label class="modal__label">Комментарий к заявке</label>
+              <div class="modal__wrap">
+                <textarea class="modal__textarea" placeholder="Ваш комментарий"></textarea>
+              </div>
+            </div>
+          </div>
+          <label class="modal__val">
+            <input class="modal__checkbox" type="checkbox" checked>
+            Согласен на <a class="modal__link" href="#">Обработку персональных данных</a> и с <a class="modal__link"
+              href="#">Политикой конфиденциальности</a>
+          </label>
+          <button class="modal__submit" type="submit">
+            Отправить заявку
+            <img src="img/icons/hero-arrow.svg" width="18" height="12" alt="Отправить">
+          </button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+  <div class="modal">
+    <div class="modal__bg"></div>
+    <div class="modal__window first" id="secondModal">
+      <button class="modal__close">
+        <img class="modal__icon" src="img/icons/close.svg" width="26" height="26" alt="Закрыть">
+      </button>
+      <div class="modal__main">
+        <h2 class="modal__title">Заполните форму и&nbsp;мы свяжемся с вами</h2>
+        <form class="modal__form" action="/">
+          <div class="modal__inner">
+            <div class="modal__item">
+              <label class="modal__label">Как к вам обращаться</label>
+              <div class="modal__wrap">
+                <input class="modal__input" type="text" placeholder="Ваше имя">
+              </div>
+            </div>
+            <div class="modal__item">
+              <label class="modal__label">Номер телефона для связи</label>
+              <div class="modal__wrap">
+                <input class="modal__input phone" type="text" placeholder="+7 (___) ___-__-__">
+              </div>
+            </div>
+            <div class="modal__item">
+              <label class="modal__label">Удобное время для звонка</label>
+              <div class="modal__grid">
+                <select class="modal__select">
+                  <option value="22.12">22.12</option>
+                  <option value="23.12">23.12</option>
+                  <option value="24.12">24.12</option>
+                </select>
+                <select class="modal__select">
+                  <option value="15:30">15:30</option>
+                  <option value="15:45">15:45</option>
+                  <option value="16:00">16:00</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <label class="modal__val">
+            <input class="modal__checkbox" type="checkbox" checked>
+            Согласен на <a class="modal__link" href="#">Обработку персональных данных</a> и с <a class="modal__link"
+              href="#">Политикой конфиденциальности</a>
+          </label>
+          <button class="modal__submit" type="submit">
+            Отправить заявку
+            <img src="img/icons/hero-arrow.svg" width="18" height="12" alt="Отправить">
+          </button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+  <header class="header">
+    <div class="container">
+      <div class="header__top">
+        <div class="header__first">
+          <a class="header__logo" href="/">
+            <img src="img/logo.svg" width="247" height="61" alt="Терра-Фрост">
+          </a>
+          <span class="header__label">Инжиниринговая компания с&nbsp;собственным производством</span>
+        </div>
+        <div class="header__second">
+          <div class="header__socials">
+            <a class="header__social" href="#" target="_blank">
+              <img src="img/icons/whatsapp-icon.svg" width="47" height="47" alt="Whatsapp">
+            </a>
+            <a class="header__social" href="#" target="_blank">
+              <img src="img/icons/telegram-icon.svg" width="47" height="47" alt="Telegram">
+            </a>
+          </div>
+          <a class="header__phone" href="tel:+74959707321">
+            +7 495 970-73-21
+            <img src="img/icons/header-arrow.svg" width="8" height="5" alt="Раскрыть">
+          </a>
+        </div>
+        <div class="header__third">
+          <a class="header__recall" href="#" data-modal="secondModal" data-form-name="Мы поможем">Перезвоните мне</a>
+          <a class="header__feedback" href="#" data-modal="firstModal" data-form-name="Мы поможем">Оставить заявку</a>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <nav class="header__nav">
+          <div class="header__item">
+            <a class="header__link" href="#">О компании</a>
+          </div>
+          <div class="header__item">
+            <span class="header__link">
+              Оборудование
+              <img class="header__dropdown" src="img/icons/header-dropdown.svg" width="8" height="5" alt="Раскрыть">
+            </span>
+            <div class="header__sublist">
+              <a class="header__sublink" href="#">Подбор и расчет холодильного оборудования</a>
+              <a class="header__sublink" href="#">Монтаж холодильного оборудования</a>
+              <a class="header__sublink" href="#">Проектирование холодильного оборудования</a>
+              <a class="header__sublink" href="#">Производство холодильного оборудования</a>
+              <a class="header__sublink" href="#">Поставка холодильного оборудования</a>
+              <a class="header__sublink" href="#">Пуско-наладка холодильного оборудования</a>
+            </div>
+          </div>
+          <div class="header__item">
+            <span class="header__link">
+              Услуги
+              <img class="header__dropdown" src="img/icons/header-dropdown.svg" width="8" height="5" alt="Раскрыть">
+            </span>
+            <div class="header__sublist">
+              <a class="header__sublink" href="#">Подбор и расчет холодильного оборудования</a>
+              <a class="header__sublink" href="#">Монтаж холодильного оборудования</a>
+              <a class="header__sublink" href="#">Проектирование холодильного оборудования</a>
+              <a class="header__sublink" href="#">Производство холодильного оборудования</a>
+              <a class="header__sublink" href="#">Поставка холодильного оборудования</a>
+              <a class="header__sublink" href="#">Пуско-наладка холодильного оборудования</a>
+            </div>
+          </div>
+          <div class="header__item">
+            <a class="header__link" href="#">Проекты</a>
+          </div>
+          <div class="header__item">
+            <span class="header__link">
+              Документация
+              <img class="header__dropdown" src="img/icons/header-dropdown.svg" width="8" height="5" alt="Раскрыть">
+            </span>
+            <div class="header__sublist">
+              <a class="header__sublink" href="#">Подбор и расчет холодильного оборудования</a>
+              <a class="header__sublink" href="#">Монтаж холодильного оборудования</a>
+              <a class="header__sublink" href="#">Проектирование холодильного оборудования</a>
+              <a class="header__sublink" href="#">Производство холодильного оборудования</a>
+              <a class="header__sublink" href="#">Поставка холодильного оборудования</a>
+              <a class="header__sublink" href="#">Пуско-наладка холодильного оборудования</a>
+            </div>
+          </div>
+          <div class="header__item">
+            <a class="header__link" href="#">Контакты</a>
+          </div>
+        </nav>
+        <button class="header__search">
+          <span class="header__search-inner">
+            <img class="header__search-icon" src="img/icons/header-search.svg" width="14" height="14" alt="Поиск">
+            <img class="header__search-close" src="img/icons/header-close-search.svg" width="14" height="14"
+              alt="Закрыть">
+          </span>
+          Поиск
+        </button>
+      </div>
+    </div>
+    <div class="header-search">
+      <div class="container">
+        <form class="header-search__form" action="/">
+          <input class="header-search__input" type="text" placeholder="Я ищу..">
+          <button class="header-search__button">
+            <img src="img/icons/header-search-submit.svg" width="22" height="22" alt="Поиск">
+          </button>
+        </form>
+      </div>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="container">
+      <div class="hero__global">
+        <div class="hero__top">
+          <div class="hero__left">
+            <h1 class="hero__title">Высокотехнологичное холодильное оборудование «под ключ»</h1>
+            <p class="hero__subtitle">Полный спектр услуг для коммерческих и промышленных объектов</p>
+            <div class="hero__align">
+              <a class="hero__link" href="#" data-modal="firstModal" data-form-name="Мы поможем">
+                Бесплатная консультация
+                <img src="img/icons/hero-arrow.svg" width="18" height="12" alt="Перейти">
+              </a>
+            </div>
+          </div>
+          <div class="hero__right">
+            <div class="hero__point">
+              <img class="hero__ok" src="img/icons/hero-ok.svg" width="16" height="16" alt="Иконка">
+              Проектирование
+            </div>
+            <div class="hero__point">
+              <img class="hero__ok" src="img/icons/hero-ok.svg" width="16" height="16" alt="Иконка">
+              Производство
+            </div>
+            <div class="hero__point">
+              <img class="hero__ok" src="img/icons/hero-ok.svg" width="16" height="16" alt="Иконка">
+              Поставка
+            </div>
+            <div class="hero__point">
+              <img class="hero__ok" src="img/icons/hero-ok.svg" width="16" height="16" alt="Иконка">
+              Монтаж
+            </div>
+            <div class="hero__point">
+              <img class="hero__ok" src="img/icons/hero-ok.svg" width="16" height="16" alt="Иконка">
+              Сервисное обслуживание
+            </div>
+          </div>
+        </div>
+        <div class="hero__bottom">
+          <div class="hero__capsule">
+            <p class="hero__label">Опыт работы</p>
+            <p class="hero__value"><span class="hero__big">15</span> лет</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="gray-bg">
+    <div class="place">
+      <div class="container">
+        <img class="place__image" src="img/placeholder.jpg" width="1432" height="106" loading="lazy" alt="Картинка">
+      </div>
+    </div>
+    <section class="about">
+      <div class="container">
+        <div class="about__global">
+          <div class="about__left">
+            <div class="about__top">
+              <h2 class="about__title">Терра-Фрост - российская инженерно-производственная компания</h2>
+              <p class="about__text">
+                Мы предлагаем комплексные решения по холодоснабжению для объектов нового строительства
+                и&nbsp;модернизации действующих производств, складов и предприятий. 
+                <br><br>
+                Обеспечиваем полный цикл работ: от разработки проектной и рабочей документации до подбора, производства
+                и поставки оборудования, а также выполняем монтаж и пуско-наладку «под ключ».
+                <br><br>
+                Вы получаете надежную, эффективную систему холодоснабжения, адаптированную под специфику вашего
+                предприятия, сроки и технические требования.
+              </p>
+            </div>
+            <div class="about__bottom">
+              <a class="about__link" href="#">
+                Узнать подробнее
+                <img src="img/icons/hero-arrow.svg" width="18" height="12" alt="Перейти">
+              </a>
+            </div>
+          </div>
+          <div class="about__right">
+            <div class="swiper about__slider">
+              <div class="swiper-wrapper about__block">
+                <div class="about__item">
+                  <img class="about__icon" src="img/icons/about-1.svg" width="56" height="56" alt="Иконка">
+                  <h3 class="about__caption">Компоненты</h3>
+                  <p class="about__description">Для производства оборудования<br>
+                    мы применяем качественные<br>
+                    материалы и компоненты ведущих<br>
+                    брендов Европы</p>
+                </div>
+                <div class="about__item">
+                  <img class="about__icon" src="img/icons/about-2.svg" width="56" height="56" alt="Иконка">
+                  <h3 class="about__caption">Сроки</h3>
+                  <p class="about__description">Завоевали положительную <br>
+                    репутацию благодаря <br>
+                    соблюдению сроков <br>
+                    и качеству работы</p>
+                </div>
+                <div class="about__item">
+                  <img class="about__icon" src="img/icons/about-3.svg" width="56" height="56" alt="Иконка">
+                  <h3 class="about__caption">Персональный подход</h3>
+                  <p class="about__description">Мы готовы предложить <br>
+                    оборудование с учетом специфики<br>
+                    предприятия, требований бюджета <br>
+                    и пожеланий клиента</p>
+                </div>
+                <div class="about__item">
+                  <img class="about__logo" src="img/about-logo.png" width="186" height="166" loading="lazy"
+                    alt="Логотип">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="half-bg">
+    <section class="modern">
+      <div class="container">
+        <div class="modern__top">
+          <h2 class="modern__title">Мы поставляем современное холодильное оборудование для коммерческих
+            и&nbsp;промышленных объектов</h2>
+          <div class="modern__tag">Оборудование</div>
+        </div>
+        <div class="swiper modern__slider">
+          <div class="modern__block swiper-wrapper">
+            <a class="modern__item swiper-slide" href="#">
+              <span class="modern__bg">
+                <img class="modern__image" src="img/modern-1.png" width="196" height="301" loading="lazy"
+                  alt="Картинка">
+              </span>
+              <span class="modern__bottom">
+                <span class="modern__caption">Стационарные холодильные камеры</span>
+                <span class="modern__arrow">
+                  <img src="img/icons/modern-arrow.svg" width="18" height="12" alt="Перейти">
+                </span>
+              </span>
+            </a>
+            <a class="modern__item swiper-slide" href="#">
+              <span class="modern__bg">
+                <img class="modern__image" src="img/modern-1.png" width="196" height="301" loading="lazy"
+                  alt="Картинка">
+              </span>
+              <span class="modern__bottom">
+                <span class="modern__caption">Холодильные камеры для хранения мяса</span>
+                <span class="modern__arrow">
+                  <img src="img/icons/modern-arrow.svg" width="18" height="12" alt="Перейти">
+                </span>
+              </span>
+            </a>
+            <a class="modern__item swiper-slide" href="#">
+              <span class="modern__bg">
+                <img class="modern__image" src="img/modern-1.png" width="196" height="301" loading="lazy"
+                  alt="Картинка">
+              </span>
+              <span class="modern__bottom">
+                <span class="modern__caption">Среднетемпературные холодильные камеры</span>
+                <span class="modern__arrow">
+                  <img src="img/icons/modern-arrow.svg" width="18" height="12" alt="Перейти">
+                </span>
+              </span>
+            </a>
+            <a class="modern__item swiper-slide" href="#">
+              <span class="modern__bg">
+                <img class="modern__image" src="img/modern-1.png" width="196" height="301" loading="lazy"
+                  alt="Картинка">
+              </span>
+              <span class="modern__bottom">
+                <span class="modern__caption">Низкотемпературные холодильные камеры</span>
+                <span class="modern__arrow">
+                  <img src="img/icons/modern-arrow.svg" width="18" height="12" alt="Перейти">
+                </span>
+              </span>
+            </a>
+            <a class="modern__item swiper-slide" href="#">
+              <span class="modern__bg">
+                <img class="modern__image" src="img/modern-1.png" width="196" height="301" loading="lazy"
+                  alt="Картинка">
+              </span>
+              <span class="modern__bottom">
+                <span class="modern__caption">Холодильные камеры сборно-разборные</span>
+                <span class="modern__arrow">
+                  <img src="img/icons/modern-arrow.svg" width="18" height="12" alt="Перейти">
+                </span>
+              </span>
+            </a>
+            <a class="modern__item swiper-slide" href="#">
+              <span class="modern__bg">
+                <img class="modern__image" src="img/modern-1.png" width="196" height="301" loading="lazy"
+                  alt="Картинка">
+              </span>
+              <span class="modern__bottom">
+                <span class="modern__caption">Камеры шоковой заморозки</span>
+                <span class="modern__arrow">
+                  <img src="img/icons/modern-arrow.svg" width="18" height="12" alt="Перейти">
+                </span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="modern__align">
+          <a class="modern__link" href="#">Посмотреть весь каталог</a>
+        </div>
+      </div>
+    </section>
+  </div>
+  <section class="work">
+    <div class="work__inner">
+      <div class="container">
+        <div class="work__global">
+          <h2 class="work__title">Мы работаем <span class="work__white">по всей России</span></h2>
+          <img class="work__image" src="img/work-image2.svg" width="1680" height="756" loading="lazy" alt="Картинка">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="services">
+    <div class="container">
+      <h2 class="services__title">Услуги компании Терра-Фрост</h2>
+      <div class="swiper services__slider">
+        <div class="swiper-wrapper services__block">
+          <a class="modern__item swiper-slide" href="#">
+            <img class="modern__image" src="img/services-1.jpg" width="456" height="352" loading="lazy" alt="Картинка">
+            <span class="modern__bottom">
+              <span class="modern__caption">Подбор и расчет холодильного оборудования</span>
+              <span class="modern__arrow">
+                <img src="img/icons/modern-arrow.svg" width="18" height="12" alt="Перейти">
+              </span>
+            </span>
+          </a>
+          <a class="modern__item swiper-slide" href="#">
+            <img class="modern__image" src="img/services-2.jpg" width="456" height="352" loading="lazy" alt="Картинка">
+            <span class="modern__bottom">
+              <span class="modern__caption">Проектирование холодильного оборудования</span>
+              <span class="modern__arrow">
+                <img src="img/icons/modern-arrow.svg" width="18" height="12" alt="Перейти">
+              </span>
+            </span>
+          </a>
+          <a class="modern__item swiper-slide" href="#"></a>
+          <a class="modern__item swiper-slide" href="#"></a>
+          <a class="modern__item swiper-slide" href="#">
+            <img class="modern__image" src="img/services-3.jpg" width="456" height="352" loading="lazy" alt="Картинка">
+            <span class="modern__bottom">
+              <span class="modern__caption">Производство холодильного оборудования</span>
+              <span class="modern__arrow">
+                <img src="img/icons/modern-arrow.svg" width="18" height="12" alt="Перейти">
+              </span>
+            </span>
+          </a>
+          <a class="modern__item swiper-slide" href="#">
+            <img class="modern__image" src="img/services-4.jpg" width="456" height="352" loading="lazy" alt="Картинка">
+            <span class="modern__bottom">
+              <span class="modern__caption">Поставка холодильного оборудования</span>
+              <span class="modern__arrow">
+                <img src="img/icons/modern-arrow.svg" width="18" height="12" alt="Перейти">
+              </span>
+            </span>
+          </a>
+          <a class="modern__item swiper-slide" href="#">
+            <img class="modern__image" src="img/services-5.jpg" width="456" height="352" loading="lazy" alt="Картинка">
+            <span class="modern__bottom">
+              <span class="modern__caption">Монтаж холодильного оборудования</span>
+              <span class="modern__arrow">
+                <img src="img/icons/modern-arrow.svg" width="18" height="12" alt="Перейти">
+              </span>
+            </span>
+          </a>
+          <a class="modern__item swiper-slide" href="#">
+            <img class="modern__image" src="img/services-6.jpg" width="456" height="352" loading="lazy" alt="Картинка">
+            <span class="modern__bottom">
+              <span class="modern__caption">Пуско-наладка холодильного оборудования</span>
+              <span class="modern__arrow">
+                <img src="img/icons/modern-arrow.svg" width="18" height="12" alt="Перейти">
+              </span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="features">
+    <div class="container">
+      <h2 class="features__title">Преимущества работы с Терра Фрост</h2>
+      <div class="features__global">
+        <div class="features__left">
+          <div class="swiper features__slider">
+            <div class="swiper-wrapper features__block">
+              <div class="features__item swiper-slide">
+                <img class="features__icon" src="img/icons/features-1.svg" width="56" height="56" alt="Иконка">
+                <p class="features__text">Предлагаем <br>
+                  комплексные решения<br>
+                  под ключ</p>
+              </div>
+              <div class="features__item swiper-slide">
+                <img class="features__icon" src="img/icons/features-2.svg" width="56" height="56" alt="Иконка">
+                <p class="features__text">Гарантируем <br>
+                  оперативность<br>
+                  и качественный результат</p>
+              </div>
+              <div class="features__item swiper-slide">
+                <img class="features__icon" src="img/icons/features-3.svg" width="56" height="56" alt="Иконка">
+                <p class="features__text">Имеем собственное <br> производство</p>
+              </div>
+              <div class="features__item swiper-slide">
+                <img class="features__icon" src="img/icons/features-4.svg" width="56" height="56" alt="Иконка">
+                <p class="features__text">Реализуем <br>
+                  энергосберегающие <br>
+                  решения</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="features__right">
+          <div class="features__pill">
+            <p class="features__label">Поставок выполнено</p>
+            <p class="features__value">5350+</p>
+          </div>
+          <img class="features__image" src="img/features-1.png" width="560" height="456" loading="lazy" alt="Картинки">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="achive">
+    <div class="achive__inner">
+      <div class="container">
+        <h2 class="achive__title">Наши достижения на рынке холодильного оборудования</h2>
+        <div class="achive__block">
+          <div class="achive__item">
+            <p class="achive__value">5350+</p>
+            <p class="achive__label">Поставок выполнено</p>
+          </div>
+          <div class="achive__item">
+            <p class="achive__value">1146+</p>
+            <p class="achive__label">Проектов завершено</p>
+          </div>
+          <div class="achive__item">
+            <p class="achive__value">100%</p>
+            <p class="achive__label">Гарантия качества</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="half-bg">
+    <section class="projects">
+      <div class="container">
+        <h2 class="projects__title">Наши проекты</h2>
+        <div class="projects__block">
+          <a class="projects__item swiper-slide" href="#">
+            <img class="projects__image" src="img/projects-1.jpg" width="334" height="258" loading="lazy"
+              alt="Картинка">
+            <span class="projects__middle">
+              <span class="projects__square">350 м2</span>
+              <span class="projects__name">Охлаждаемые склады</span>
+            </span>
+            <span class="projects__caption">Азбука Вкуса</span>
+          </a>
+          <a class="projects__item swiper-slide" href="#">
+            <img class="projects__image" src="img/projects-2.jpg" width="334" height="182" loading="lazy"
+              alt="Картинка">
+            <span class="projects__middle">
+              <span class="projects__square">245 500 м2</span>
+              <span class="projects__name">Автомобильный завод</span>
+            </span>
+            <span class="projects__caption">Hyundai Motor</span>
+          </a>
+          <a class="projects__item swiper-slide" href="#">
+            <img class="projects__image" src="img/projects-3.jpg" width="700" height="432" loading="lazy"
+              alt="Картинка">
+            <span class="projects__middle">
+              <span class="projects__square">72 200 м2</span>
+              <span class="projects__name">Пищевые производства</span>
+            </span>
+            <span class="projects__caption">McDonald's</span>
+          </a>
+        </div>
+        <div class="projects__block second">
+          <a class="projects__item swiper-slide" href="#">
+            <img class="projects__image" src="img/projects-4.jpg" width="700" height="432" loading="lazy"
+              alt="Картинка">
+            <span class="projects__middle">
+              <span class="projects__square">52 500 м2</span>
+              <span class="projects__name">Охлаждаемые склады</span>
+            </span>
+            <span class="projects__caption">ВкусВилл Шушары</span>
+          </a>
+          <a class="projects__item swiper-slide" href="#">
+            <img class="projects__image" src="img/projects-5.jpg" width="334" height="182" loading="lazy"
+              alt="Картинка">
+            <span class="projects__middle">
+              <span class="projects__square">46 400 м2</span>
+              <span class="projects__name">Охлаждаемые склады</span>
+            </span>
+            <span class="projects__caption">Дикси</span>
+          </a>
+          <a class="projects__item swiper-slide" href="#">
+            <img class="projects__image" src="img/projects-6.jpg" width="334" height="258" loading="lazy"
+              alt="Картинка">
+            <span class="projects__middle">
+              <span class="projects__square">6000 м2</span>
+              <span class="projects__name">Цех автоматической окраски</span>
+            </span>
+            <span class="projects__caption">Мираторг</span>
+          </a>
+        </div>
+        <div class="projects__bottom">
+          <a class="projects__link" href="#">
+            Все проекты
+            <img src="img/icons/hero-arrow.svg" width="18" height="12" alt="Перейти">
+          </a>
+        </div>
+      </div>
+</section>
+  </div>
+  <section class="needed">
+    <div class="needed__global">
+      <div class="container">
+        <div class="needed__inner">
+          <div class="needed__wrapper">
+            <h2 class="needed__title">Необходимо холодильное оборудование для производства и&nbsp;склада?</h2>
+            <div class="needed__list">
+              <div class="needed__point">
+                <img class="needed__ok" src="img/icons/needed-ok.svg" width="16" height="16" alt="Иконка">
+                Работа по всей России
+              </div>
+              <div class="needed__point">
+                <img class="needed__ok" src="img/icons/needed-ok.svg" width="16" height="16" alt="Иконка">
+                15 лет опыта
+              </div>
+              <div class="needed__point">
+                <img class="needed__ok" src="img/icons/needed-ok.svg" width="16" height="16" alt="Иконка">
+                Штат проектировщиков
+              </div>
+            </div>
+          </div>
+          <div class="needed__align">
+            <a class="needed__link" href="#">
+              Оставить заявку
+              <img src="img/icons/hero-arrow.svg" width="18" height="12" alt="Перейти">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="partners">
+    <div class="container">
+      <div class="partners__global">
+        <div class="partners__col">
+          <div class="partners__item">
+            <div class="partners__inner">
+              <img class="partners__logo" src="img/partners-1.svg" width="87" height="60" alt="Логотип">
+            </div>
+            <div class="partners__inner">
+              <img class="partners__logo" src="img/partners-2.svg" width="110" height="45" alt="Логотип">
+            </div>
+            <div class="partners__inner">
+              <img class="partners__logo" src="img/partners-3.png" width="135" height="34" alt="Логотип">
+            </div>
+            <div class="partners__inner">
+              <img class="partners__logo" src="img/partners-4.svg" width="156" height="39" alt="Логотип">
+            </div>
+          </div>
+          <div class="partners__item">
+            <div class="partners__inner">
+              <img class="partners__logo" src="img/partners-5.svg" width="104" height="20" alt="Логотип">
+            </div>
+            <div class="partners__inner">
+              <img class="partners__logo" src="img/partners-6.svg" width="128" height="25" alt="Логотип">
+            </div>
+            <div class="partners__inner">
+              <img class="partners__logo" src="img/partners-7.svg" width="112" height="40" alt="Логотип">
+            </div>
+            <div class="partners__inner">
+              <img class="partners__logo" src="img/partners-8.svg" width="112" height="25" alt="Логотип">
+            </div>
+          </div>
+        </div>
+        <div class="partners__main">
+          <h2 class="partners__title">Наши клиенты и&nbsp;партнёры</h2>
+        </div>
+        <div class="partners__col">
+          <div class="partners__item">
+            <div class="partners__inner">
+              <img class="partners__logo" src="img/partners-5.svg" width="104" height="20" alt="Логотип">
+            </div>
+            <div class="partners__inner">
+              <img class="partners__logo" src="img/partners-6.svg" width="128" height="25" alt="Логотип">
+            </div>
+            <div class="partners__inner">
+              <img class="partners__logo" src="img/partners-7.svg" width="112" height="40" alt="Логотип">
+            </div>
+            <div class="partners__inner">
+              <img class="partners__logo" src="img/partners-8.svg" width="112" height="25" alt="Логотип">
+            </div>
+          </div>
+          <div class="partners__item">
+            <div class="partners__inner">
+              <img class="partners__logo" src="img/partners-1.svg" width="87" height="60" alt="Логотип">
+            </div>
+            <div class="partners__inner">
+              <img class="partners__logo" src="img/partners-2.svg" width="110" height="45" alt="Логотип">
+            </div>
+            <div class="partners__inner">
+              <img class="partners__logo" src="img/partners-3.png" width="135" height="34" alt="Логотип">
+            </div>
+            <div class="partners__inner">
+              <img class="partners__logo" src="img/partners-4.svg" width="156" height="39" alt="Логотип">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="partners__align">
+        <a class="partners__link" href="#">Показать все</a>
+      </div>
+    </div>
+  </section>
+  <div class="map">
+    <div class="map__inner">
+      <div class="map__map">
+        <div style="position:relative;overflow:hidden;"><a
+            href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps"
+            style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a
+            href="https://yandex.ru/maps/213/moscow/stops/station__9858884/?ll=37.626009%2C55.756499&tab=overview&utm_medium=mapframe&utm_source=maps&z=15.56"
+            style="color:#eee;font-size:12px;position:absolute;top:14px;">Площадь Революции — Яндекс Карты</a><iframe
+            src="https://yandex.ru/map-widget/v1/?ll=37.626009%2C55.756499&masstransit%5BstopId%5D=station__9858884&mode=masstransit&tab=overview&z=15.56"
+            width="100%" height="675" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe></div>
+      </div>
+      <div class="container">
+        <div class="map__wrapper">
+
+          <div class="map__main">
+            <div class="map__online">Онлайн</div>
+            <div class="map__top">
+              <img class="map__avatar" src="img/map-avatar.jpg" width="123" height="123" loading="lazy" alt="Аватар">
+            </div>
+            <a class="map__phone" href="tel:+74959707321">+7 495 970-73-21</a>
+            <p class="map__post">Отдел продаж</p>
+            <a class="map__link" href="#">
+              Написать
+              <img src="img/icons/hero-arrow.svg" width="18" height="12" alt="Перейти">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <img class="footer__logo" src="img/logo-second.svg" width="1430" height="75" loading="lazy" alt="Логотип">
+      </div>
+      <div class="footer__middle">
+        <div class="footer__first">
+          <div class="footer__item">
+            <p class="footer__label">Адрес:</p>
+            <p class="footer__value">г. Москва, Варшавское шоссе, 26</p>
+          </div>
+        </div>
+        <div class="footer__second">
+          <div class="footer__item">
+            <p class="footer__label">Телефон:</p>
+            <p class="footer__value"><a class="footer__goto" href="tel:+74959707321">+7 495 970-73-21</a></p>
+          </div>
+          <div class="footer__item">
+            <p class="footer__label">Почта:</p>
+            <p class="footer__value"><a class="footer__goto" href="mailto:info@terra-frost.ru">info@terra-frost.ru</a>
+            </p>
+          </div>
+        </div>
+        <div class="footer__socials">
+          <a class="footer__social" href="#" target="_blank">
+            <img src="img/icons/footer-whatsapp.svg" width="61" height="61" alt="Whatsapp">
+          </a>
+          <a class="footer__social" href="#" target="_blank">
+            <img src="img/icons/footer-telegram.svg" width="61" height="61" alt="Telegram">
+          </a>
+          <a class="footer__social" href="#" target="_blank">
+            <img src="img/icons/footer-vk.svg" width="61" height="61" alt="Вконтакте">
+          </a>
+          <a class="footer__social" href="#" target="_blank">
+            <img src="img/icons/footer-max.svg" width="61" height="61" alt="Макс">
+          </a>
+          <a class="footer__social" href="#" target="_blank">
+            <img src="img/icons/footer-rutube.svg" width="61" height="61" alt="Rutube">
+          </a>
+        </div>
+      </div>
+      <div class="footer__birkin">
+        <nav class="footer__nav">
+          <a class="footer__link" href="#">О компании</a>
+          <a class="footer__link" href="#">Услуги</a>
+          <a class="footer__link" href="#">Оборудование</a>
+          <a class="footer__link" href="#">Документация</a>
+          <a class="footer__link" href="#">Проекты</a>
+          <a class="footer__link" href="#">Контакты</a>
+        </nav>
+        <a class="footer__feedback" href="#">Оставить заявку</a>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">@2025 Терра Фрост, terra-frost.ru</p>
+        <a class="footer__privacy" href="#">Политика конфиденциальности</a>
+        <div class="footer__dev">
+          <span class="footer__op">Сайт разработан:</span>
+          <a class="footer__creator" href="#" target="_blank">
+            <img src="img/footer-developer.svg" width="90" height="13" alt="Разработчик">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="button-up">
+    <img src="img/icons/button-up.svg" width="55" height="55" alt="Подняться вверх">
+  </button>
+
+  <script src="js/swiper.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

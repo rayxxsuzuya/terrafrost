@@ -1,0 +1,9 @@
+<svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path opacity="0.5" d="M32.5 51.75H51.5V32.25" stroke="#0A459E" stroke-width="2" />
+  <path opacity="0.5" d="M23.5 51.75H4.5V32.25" stroke="#0A459E" stroke-width="2" />
+  <path opacity="0.5" d="M23.5 4.25H4.5V23.75" stroke="#0A459E" stroke-width="2" />
+  <path opacity="0.5" d="M32.5 4.25H51.5V23.75" stroke="#0A459E" stroke-width="2" />
+  <path d="M39.3012 29.6999C39.3012 35.6646 34.4659 40.4999 28.5012 40.4999C22.5365 40.4999 17.7012 35.6646 17.7012 29.6999C17.7012 23.7352 22.5365 18.8999 28.5012 18.8999C34.4659 18.8999 39.3012 23.7352 39.3012 29.6999Z" stroke="#155288" stroke-width="2" />
+  <path d="M28.502 29.6999V24.8999" stroke="#155288" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M26.1016 15.5H30.9016" stroke="#155288" stroke-width="2" stroke-linecap="round" />
+</svg>
