@@ -10,6 +10,122 @@
 </head>
 
 <body>
+  <div class="modal">
+    <div class="modal__bg"></div>
+    <div class="modal__window first" id="firstModal">
+      <button class="modal__close">
+        <img class="modal__icon" src="img/icons/close.svg" width="26" height="26" alt="Закрыть">
+      </button>
+      <div class="modal__main">
+        <h2 class="modal__title">Заполните форму и&nbsp;мы свяжемся с вами</h2>
+        <form class="modal__form" action="/">
+          <div class="modal__inner">
+            <div class="modal__item">
+              <label class="modal__label">Как к вам обращаться</label>
+              <div class="modal__wrap">
+                <input class="modal__input" type="text" placeholder="Ваше имя">
+              </div>
+            </div>
+            <div class="modal__item">
+              <label class="modal__label">Номер телефона для связи</label>
+              <div class="modal__wrap">
+                <input class="modal__input phone" type="text" placeholder="+7 (___) ___-__-__">
+              </div>
+            </div>
+            <div class="modal__item">
+              <label class="modal__label">E-mail</label>
+              <div class="modal__wrap">
+                <input class="modal__input" type="email" placeholder="sample@gmail.com">
+              </div>
+            </div>
+            <div class="modal__item">
+              <label class="modal__label">Удобное время для звонка</label>
+              <div class="modal__grid">
+                <select class="modal__select">
+                  <option value="22.12">22.12</option>
+                  <option value="23.12">23.12</option>
+                  <option value="24.12">24.12</option>
+                </select>
+                <select class="modal__select">
+                  <option value="15:30">15:30</option>
+                  <option value="15:45">15:45</option>
+                  <option value="16:00">16:00</option>
+                </select>
+              </div>
+            </div>
+            <div class="modal__item">
+              <label class="modal__label">Комментарий к заявке</label>
+              <div class="modal__wrap">
+                <textarea class="modal__textarea" placeholder="Ваш комментарий"></textarea>
+              </div>
+            </div>
+          </div>
+          <label class="modal__val">
+            <input class="modal__checkbox" type="checkbox" checked>
+            Согласен на <a class="modal__link" href="#">Обработку персональных данных</a> и с <a class="modal__link"
+              href="#">Политикой конфиденциальности</a>
+          </label>
+          <button class="modal__submit" type="submit">
+            Отправить заявку
+            <img src="img/icons/hero-arrow.svg" width="18" height="12" alt="Отправить">
+          </button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+  <div class="modal">
+    <div class="modal__bg"></div>
+    <div class="modal__window first" id="secondModal">
+      <button class="modal__close">
+        <img class="modal__icon" src="img/icons/close.svg" width="26" height="26" alt="Закрыть">
+      </button>
+      <div class="modal__main">
+        <h2 class="modal__title">Заполните форму и&nbsp;мы свяжемся с вами</h2>
+        <form class="modal__form" action="/">
+          <div class="modal__inner">
+            <div class="modal__item">
+              <label class="modal__label">Как к вам обращаться</label>
+              <div class="modal__wrap">
+                <input class="modal__input" type="text" placeholder="Ваше имя">
+              </div>
+            </div>
+            <div class="modal__item">
+              <label class="modal__label">Номер телефона для связи</label>
+              <div class="modal__wrap">
+                <input class="modal__input phone" type="text" placeholder="+7 (___) ___-__-__">
+              </div>
+            </div>
+            <div class="modal__item">
+              <label class="modal__label">Удобное время для звонка</label>
+              <div class="modal__grid">
+                <select class="modal__select">
+                  <option value="22.12">22.12</option>
+                  <option value="23.12">23.12</option>
+                  <option value="24.12">24.12</option>
+                </select>
+                <select class="modal__select">
+                  <option value="15:30">15:30</option>
+                  <option value="15:45">15:45</option>
+                  <option value="16:00">16:00</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <label class="modal__val">
+            <input class="modal__checkbox" type="checkbox" checked>
+            Согласен на <a class="modal__link" href="#">Обработку персональных данных</a> и с <a class="modal__link"
+              href="#">Политикой конфиденциальности</a>
+          </label>
+          <button class="modal__submit" type="submit">
+            Отправить заявку
+            <img src="img/icons/hero-arrow.svg" width="18" height="12" alt="Отправить">
+          </button>
+        </form>
+      </div>
+    </div>
+
+  </div>
   <header class="header">
     <div class="container">
       <div class="header__top">
@@ -28,15 +144,25 @@
               <img src="img/icons/telegram-icon.svg" width="47" height="47" alt="Telegram">
             </a>
           </div>
-          <a class="header__phone" href="tel:+74959707321">
-            +7 495 970-73-21
-            <img src="img/icons/header-arrow.svg" width="8" height="5" alt="Раскрыть">
-          </a>
+          <div class="header__rato">
+            <a class="header__phone" href="tel:+74959707321">
+              +7 495 970-73-21
+              <img src="img/icons/header-arrow.svg" width="8" height="5" alt="Раскрыть">
+            </a>
+            <div class="header__phones">
+              <a class="header__conto" href="tel:+74959707321">+7 495 970-73-21</a>
+              <a class="header__conto" href="tel:+74958004001">+7 495 800-40-01</a>
+              <a class="header__conto" href="tel:+74959707321">+7 495 970-73-21</a>
+            </div>
+          </div>
         </div>
         <div class="header__third">
-          <a class="header__recall" href="#">Перезвоните мне</a>
-          <a class="header__feedback" href="#">Оставить заявку</a>
+          <a class="header__recall" href="#" data-modal="secondModal" data-form-name="Мы поможем">Перезвоните мне</a>
+          <a class="header__feedback" href="#" data-modal="firstModal" data-form-name="Мы поможем">Оставить заявку</a>
         </div>
+        <button class="header__open">
+          <img src="img/icons/header-menu.svg" width="43" height="43" alt="Открыть меню">
+        </button>
       </div>
       <div class="header__bottom">
         <nav class="header__nav">
@@ -93,14 +219,129 @@
           </div>
         </nav>
         <button class="header__search">
-          <img src="img/icons/header-search.svg" width="14" height="14" alt="Поиск">
+          <span class="header__search-inner">
+            <img class="header__search-icon" src="img/icons/header-search.svg" width="14" height="14" alt="Поиск">
+            <img class="header__search-close" src="img/icons/header-close-search.svg" width="14" height="14"
+              alt="Закрыть">
+          </span>
           Поиск
         </button>
       </div>
     </div>
+    <div class="header-search">
+      <div class="container">
+        <form class="header-search__form" action="/">
+          <input class="header-search__input" type="text" placeholder="Я ищу..">
+          <button class="header-search__button">
+            <img src="img/icons/header-search-submit.svg" width="22" height="22" alt="Поиск">
+          </button>
+        </form>
+      </div>
+    </div>
   </header>
+  <div class="header-mobile">
+    <div class="header-mobile__bg"></div>
+    <div class="header-mobile__inner">
+      <div class="header-mobile__top">
+        <a class="header-mobile__logo" href="/">
+          <img src="img/logo.svg" width="177" height="44" alt="Терра-Фрост">
+        </a>
+        <div class="header-mobile__close">
+          <img src="img/icons/header-close.svg" width="43" height="43" alt="Закрыть меню">
+        </div>
+      </div>
+      <form class="header-search__form" action="/">
+        <input class="header-search__input" type="text" placeholder="Поиск">
+        <button class="header-search__button">
+          <img src="img/icons/header-search-submit.svg" width="22" height="22" alt="Поиск">
+        </button>
+      </form>
+      <nav class="header-mobile__nav">
+        <div class="header__point">
+          <a class="header__link" href="#">О компании</a>
+        </div>
+        <div class="header__point">
+          <a class="header__link" href="#">Оборудование</a>
+          <img class="header__dropdown" src="img/icons/header-mobile-dropdown.svg" width="5" height="8"
+            alt="Раскрыть список">
+          <div class="header__sublist">
+            <a class="header__sublink" href="#">Подбор и расчет холодильного оборудования</a>
+            <a class="header__sublink" href="#">Проектирование холодильного оборудования</a>
+            <a class="header__sublink" href="#">Производство холодильного оборудования</a>
+            <a class="header__sublink" href="#">Поставка холодильного оборудования</a>
+            <a class="header__sublink" href="#">Монтаж холодильного оборудования</a>
+            <a class="header__sublink" href="#">Пуско-наладка холодильного оборудования</a>
+          </div>
+        </div>
+        <div class="header__point">
+          <a class="header__link" href="#">Услуги</a>
+          <img class="header__dropdown" src="img/icons/header-mobile-dropdown.svg" width="5" height="8"
+            alt="Раскрыть список">
+          <div class="header__sublist">
+            <a class="header__sublink" href="#">Подбор и расчет холодильного оборудования</a>
+            <a class="header__sublink" href="#">Проектирование холодильного оборудования</a>
+            <a class="header__sublink" href="#">Производство холодильного оборудования</a>
+            <a class="header__sublink" href="#">Поставка холодильного оборудования</a>
+            <a class="header__sublink" href="#">Монтаж холодильного оборудования</a>
+            <a class="header__sublink" href="#">Пуско-наладка холодильного оборудования</a>
+          </div>
+        </div>
+        <div class="header__point">
+          <a class="header__link" href="#">Проекты</a>
+        </div>
+        <div class="header__point">
+          <a class="header__link" href="#">Документация</a>
+          <img class="header__dropdown" src="img/icons/header-mobile-dropdown.svg" width="5" height="8"
+            alt="Раскрыть список">
+          <div class="header__sublist">
+            <a class="header__sublink" href="#">Подбор и расчет холодильного оборудования</a>
+            <a class="header__sublink" href="#">Проектирование холодильного оборудования</a>
+            <a class="header__sublink" href="#">Производство холодильного оборудования</a>
+            <a class="header__sublink" href="#">Поставка холодильного оборудования</a>
+            <a class="header__sublink" href="#">Монтаж холодильного оборудования</a>
+            <a class="header__sublink" href="#">Пуско-наладка холодильного оборудования</a>
+          </div>
+        </div>
+        <div class="header__point">
+          <a class="header__link" href="#">Контакты</a>
+        </div>
+      </nav>
+      <div class="header__rato">
+        <a class="header__phone" href="tel:+74959707321">
+          +7 495 970-73-21
+          <img src="img/icons/header-arrow.svg" width="8" height="5" alt="Раскрыть">
+        </a>
+        <div class="header__phones">
+          <a class="header__conto" href="tel:+74959707321">+7 495 970-73-21</a>
+          <a class="header__conto" href="tel:+74958004001">+7 495 800-40-01</a>
+          <a class="header__conto" href="tel:+74959707321">+7 495 970-73-21</a>
+        </div>
+      </div>
+      <div class="header__socials">
+        <a class="header__social" href="#" target="_blank">
+          <img src="img/icons/whatsapp-icon.svg" width="47" height="47" alt="Whatsapp">
+        </a>
+        <a class="header__social" href="#" target="_blank">
+          <img src="img/icons/telegram-icon.svg" width="47" height="47" alt="Telegram">
+        </a>
+      </div>
+      <div class="header__third">
+        <a class="header__recall" href="#" data-modal="secondModal" data-form-name="Мы поможем">Перезвоните мне</a>
+        <a class="header__feedback" href="#" data-modal="firstModal" data-form-name="Мы поможем">Оставить заявку</a>
+      </div>
+      <div class="header-mobile__aside">
+        <h2 class="header-mobile__caption">Услуги</h2>
+        <div class="header-mobile__list">
+          <a class="header-mobile__url" href="#"></a>
+        </div>
+        <div class="header-mobile__align">
+          <a class="header-mobile__back" href="#">Назад</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <div class="projs-global">
+  <div class="projs-global third">
     <div class="container">
       <div class="breadcrumbs">
         <a class="breadcrumbs__link first" href="/">Главная</a>
@@ -145,8 +386,7 @@
           </div>
         </div>
         <img class="service__thumb" src="img/about-page-2.jpg" width="1432" height="591" loading="lazy" alt="Картинка">
-        <div class="service__row">
-          <div class="service__left">
+        <div class="service__row eleven">
             <span class="service__point">02.</span>
             <span class="service__label">Наши преимущества</span>
           </div>
@@ -154,8 +394,9 @@
             <h3 class="service__cappo">Почему стоит обратиться в нашу фирму?</h3>
           </div>
         </div>
-        <div class="swiper features__slider">
-          <div class="swiper-wrapper features__block fourth another">
+        <div class="container">
+          <div class="swiper features__slider">
+          <div class="swiper-wrapper features__block fourth another another-second">
             <div class="features__item swiper-slide">
               <img class="features__icon" src="img/icons/company-1.svg" width="56" height="56" alt="Иконка">
               <p class="features__text">24 года опыта работы</p>
@@ -194,6 +435,8 @@
               </p>
             </div>
           </div>
+          <div class="swiper-pagination"></div>
+        </div>
         </div>
       </div>
     </section>
@@ -253,6 +496,7 @@
               </div>
             </div>
           </div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
     </section>
@@ -263,7 +507,15 @@
       <div class="container">
         <div class="work__global">
           <h2 class="work__title">Мы работаем <span class="work__white">по всей России</span></h2>
-          <img class="work__image" src="img/work-image2.svg" width="1680" height="756" loading="lazy" alt="Картинка">
+          <img class="work__image pc" src="img/work-image3.svg" width="1736" height="1340" loading="lazy" alt="Картинка">
+          <div class="work__mobile">
+            <img class="work__image" src="img/work-image-mobile.svg" width="1556" height="911" loading="lazy" alt="Картинка">
+          </div>
+          <div class="work__bottom">
+            <img src="img/icons/work-left.svg" width="14" height="9" alt="Иконка">
+            Двигайте карту в стороны
+            <img src="img/icons/work-right.svg" width="14" height="9" alt="Иконка">
+          </div>
         </div>
       </div>
     </div>
