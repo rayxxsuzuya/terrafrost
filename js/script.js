@@ -409,7 +409,7 @@ const servicesSlider = new Swiper('.services .services__slider', {
   },
   breakpoints: {
     960: {
-      slidesPerView: 2,
+      slidesPerView: 3,
     },
     700: {
       slidesPerView: 2,

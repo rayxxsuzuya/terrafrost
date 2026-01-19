@@ -2554,7 +2554,13 @@ html {
 }
 
 .modern__image {
+  width: auto;
+  max-height: 301px;
+}
+
+.services__slider .modern__image {
   width: 100%;
+  max-height: initial;
 }
 
 .header__search-close {
