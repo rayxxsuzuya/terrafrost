@@ -131,7 +131,10 @@
       <div class="header__top">
         <div class="header__first">
           <a class="header__logo" href="/">
-            <img src="img/logo.svg" width="247" height="61" alt="Терра-Фрост">
+            <span class="header__in">
+              <video class="header__logotype" src="video/logo.mp4" width="52" height="61" autoplay muted loop></video>
+            </span>
+            <img class="header__bal" src="img/logo.svg" width="180" height="27" alt="Терра-Фрост">
           </a>
           <span class="header__label">Инжиниринговая компания с&nbsp;собственным производством</span>
         </div>
@@ -243,8 +246,11 @@
     <div class="header-mobile__bg"></div>
     <div class="header-mobile__inner">
       <div class="header-mobile__top">
-        <a class="header-mobile__logo" href="/">
-          <img src="img/logo.svg" width="177" height="44" alt="Терра-Фрост">
+        <a class="header__logo sec" href="/">
+          <span class="header__in">
+            <video class="header__logotype" src="video/logo.mp4" width="37" height="43" autoplay muted loop></video>
+          </span>
+          <img class="header__bal" src="img/logo.svg" width="129" height="19" alt="Терра-Фрост">
         </a>
         <div class="header-mobile__close">
           <img src="img/icons/header-close.svg" width="43" height="43" alt="Закрыть меню">
@@ -359,7 +365,7 @@
           <a class="projs__tag" href="#">Пищевые производства</a>
           <a class="projs__tag" href="#">Прочие объекты</a>
         </div>
-        <div class="projs__block">
+        <div class="projs__block" id="projsBlock">
           <a class="projs__item" href="#">
             <img class="projs__image" src="img/projects-placeholder.jpg" width="456" height="352" loading="lazy" alt="Картинка">
             <span class="projs__bottom">
@@ -468,9 +474,45 @@
               </span>
             </span>
           </a>
+          <a class="projs__item" href="#">
+            <img class="projs__image" src="img/projects-placeholder.jpg" width="456" height="352" loading="lazy" alt="Картинка">
+            <span class="projs__bottom">
+              <span class="projs__wrapper">
+                <span class="projs__type">Охлаждаемые склады</span>
+                <span class="projs__name">McDonald's</span>
+              </span>
+              <span class="projs__arrow">
+                <img src="img/icons/modern-arrow.svg" width="18" height="12" alt="Перейти">
+              </span>
+            </span>
+          </a>
+          <a class="projs__item" href="#">
+            <img class="projs__image" src="img/projects-placeholder.jpg" width="456" height="352" loading="lazy" alt="Картинка">
+            <span class="projs__bottom">
+              <span class="projs__wrapper">
+                <span class="projs__type">Пищевые производства</span>
+                <span class="projs__name">Азбука Вкуса</span>
+              </span>
+              <span class="projs__arrow">
+                <img src="img/icons/modern-arrow.svg" width="18" height="12" alt="Перейти">
+              </span>
+            </span>
+          </a>
+          <a class="projs__item" href="#">
+            <img class="projs__image" src="img/projects-placeholder.jpg" width="456" height="352" loading="lazy" alt="Картинка">
+            <span class="projs__bottom">
+              <span class="projs__wrapper">
+                <span class="projs__type">Пищевые производства</span>
+                <span class="projs__name">Лента</span>
+              </span>
+              <span class="projs__arrow">
+                <img src="img/icons/modern-arrow.svg" width="18" height="12" alt="Перейти">
+              </span>
+            </span>
+          </a>
         </div>
         <div class="projs__align">
-          <a class="projs__link" href="#">Показать еще</a>
+          <a class="projs__link" href="#" id="showMoreBtn">Показать еще</a>
         </div>
       </div>
     </section>

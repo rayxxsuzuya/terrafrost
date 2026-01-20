@@ -35,26 +35,32 @@ headerMobileClose.addEventListener('click', () => {
   headerMobile.classList.remove('active');
 })
 
-if(document.querySelector('.projs__filter')) {
+if (document.querySelector('.projs__filter')) {
   const headerBurger2 = document.querySelector('.projs__filter');
-const headerMobile2 = document.querySelector('.header-mobile.second');
-const headerMobileBg2 = document.querySelector('.header-mobile__bg.second');
-const headerMobileClose2 = document.querySelector('.header-mobile__close.second');
+  const headerMobile2 = document.querySelector('.header-mobile.second');
+  const headerMobileBg2 = document.querySelector('.header-mobile__bg.second');
+  const headerMobileClose2 = document.querySelector('.header-mobile__close.second');
+  const headerMobileClose3 = document.querySelector('.header-mobile__close.sec');
 
-headerBurger2.addEventListener('click', () => {
-  headerBurger2.classList.toggle('active');
-  headerMobile2.classList.toggle('active');
-});
+  headerBurger2.addEventListener('click', () => {
+    headerBurger2.classList.toggle('active');
+    headerMobile2.classList.toggle('active');
+  });
 
-headerMobileBg2.addEventListener('click', () => {
-  headerBurger2.classList.remove('active');
-  headerMobile2.classList.remove('active');
-})
+  headerMobileBg2.addEventListener('click', () => {
+    headerBurger2.classList.remove('active');
+    headerMobile2.classList.remove('active');
+  })
 
-headerMobileClose2.addEventListener('click', () => {
-  headerBurger2.classList.remove('active');
-  headerMobile2.classList.remove('active');
-})
+  headerMobileClose2.addEventListener('click', () => {
+    headerBurger2.classList.remove('active');
+    headerMobile2.classList.remove('active');
+  })
+
+  headerMobileClose3.addEventListener('click', () => {
+    headerBurger2.classList.remove('active');
+    headerMobile2.classList.remove('active');
+  })
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -71,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         if (e.target.classList.contains('header__dropdown')) {
-          point.classList.toggle('active'); 
+          point.classList.toggle('active');
         }
 
         if (e.target === point || e.target === link || e.target.closest('.header__dropdown')) {
@@ -91,29 +97,21 @@ const headerList = document.querySelector('.header-mobile__list');
 const headerPoints = document.querySelectorAll('.header__point');
 const backButton = document.querySelector('.header-mobile__back');
 
-// Обработчик для каждого пункта меню
 headerPoints.forEach(point => {
   point.addEventListener('click', (e) => {
-    // Проверяем, есть ли у элемента подменю
     const sublist = point.querySelector('.header__sublist');
-    
+
     if (sublist) {
-      // Предотвращаем переход по ссылке
       e.preventDefault();
-      
-      // Получаем текст из основной ссылки
+
       const linkText = point.querySelector('.header__link').textContent;
-      
-      // Получаем все подссылки
+
       const sublinks = sublist.querySelectorAll('.header__sublink');
-      
-      // Обновляем заголовок
+
       headerCaption.textContent = linkText;
-      
-      // Очищаем список
+
       headerList.innerHTML = '';
-      
-      // Переносим ссылки
+
       sublinks.forEach(sublink => {
         const newLink = document.createElement('a');
         newLink.className = 'header-mobile__url';
@@ -121,14 +119,12 @@ headerPoints.forEach(point => {
         newLink.textContent = sublink.textContent;
         headerList.appendChild(newLink);
       });
-      
-      // Добавляем класс active
+
       headerAside.classList.add('active');
     }
   });
 });
 
-// Обработчик для кнопки "Назад"
 if (backButton) {
   backButton.addEventListener('click', (e) => {
     e.preventDefault();
@@ -136,13 +132,13 @@ if (backButton) {
   });
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   const phoneButton = document.querySelector('.header-mobile .header__phone');
   const phonesList = document.querySelector('.header-mobile .header__phones');
   const wrapper = document.querySelector('.header-mobile .header__rato');
   let isOpened = false;
 
-  phoneButton.addEventListener('click', function(e) {
+  phoneButton.addEventListener('click', function (e) {
     if (!isOpened) {
       e.preventDefault();
       wrapper.classList.add('is-open');
@@ -150,8 +146,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-  // Закрытие при клике вне элемента
-  document.addEventListener('click', function(e) {
+  document.addEventListener('click', function (e) {
     if (!wrapper.contains(e.target)) {
       wrapper.classList.remove('is-open');
       isOpened = false;
@@ -172,11 +167,44 @@ for (let i = 0; i < acc.length; i++) {
   });
 }
 
-if (document.querySelector('.device__window')) {
-  document.querySelector('.device__close').addEventListener('click', function() {
-    document.querySelector('.device__window').style.display = 'none';
-  })
+if (document.querySelector('.device__snow')) {
+  const snowButtons = document.querySelectorAll('.device__snow');
+const deviceWindow = document.querySelector('.device__window');
+const closeButton = document.querySelector('.device__close');
+
+function checkActiveSnowflakes() {
+  const hasActive = Array.from(snowButtons).some(btn => btn.classList.contains('active'));
+
+  if (hasActive) {
+    deviceWindow.classList.add('active');
+  } else {
+    deviceWindow.classList.remove('active');
+  }
 }
+
+snowButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    button.classList.toggle('active');
+    checkActiveSnowflakes();
+  });
+});
+
+closeButton.addEventListener('click', () => {
+  deviceWindow.classList.remove('active');
+  snowButtons.forEach(btn => btn.classList.remove('active'));
+});
+}
+
+const showMoreBtn = document.getElementById('showMoreBtn');
+const projsBlock = document.getElementById('projsBlock');
+
+showMoreBtn.addEventListener('click', function (e) {
+  e.preventDefault();
+
+  projsBlock.classList.add('show-all');
+
+  showMoreBtn.classList.add('hidden');
+});
 
 const searchButton = document.querySelector('.header__search');
 const searchBlock = document.querySelector('.header-search');
@@ -282,7 +310,6 @@ if (window.innerWidth <= 876) {
       let startX;
       let scrollLeft;
 
-      // Добавляем поддержку перетаскивания мышью (для тестирования на десктопе)
       mobileContainer.addEventListener('mousedown', (e) => {
         isScrolling = true;
         startX = e.pageX - mobileContainer.offsetLeft;
@@ -308,7 +335,6 @@ if (window.innerWidth <= 876) {
         mobileContainer.scrollLeft = scrollLeft - walk;
       });
 
-      // Курсор для мобильного контейнера
       if (window.innerWidth > 876) {
         mobileContainer.style.cursor = 'grab';
       }
@@ -320,9 +346,19 @@ document.addEventListener('DOMContentLoaded', function () {
   const mobileContainer = document.querySelector('.work__mobile');
 
   if (mobileContainer) {
-    // Устанавливаем начальную прокрутку на 200px
     mobileContainer.scrollLeft = 200;
   }
+});
+
+const showAllPartners = document.querySelector('.partners__link');
+const partnersHidden = document.querySelectorAll('.partners__item');
+
+showAllPartners.addEventListener('click', (e) => {
+  e.preventDefault();
+  showAllPartners.style.display = 'none';
+  partnersHidden.forEach(partner => {
+    partner.classList.remove('partners__item--hidden');
+  });
 });
 
 const projectFirstSlider = new Swiper('.project__slider-first', {
@@ -494,7 +530,7 @@ const seroSlider = new Swiper('.sero__slider', {
     el: '.sero__slider .swiper-pagination',
     clickable: true
   },
-   breakpoints: {
+  breakpoints: {
     700: {
       slidesPerView: 1,
     },

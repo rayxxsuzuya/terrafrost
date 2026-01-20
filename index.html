@@ -131,7 +131,10 @@
       <div class="header__top">
         <div class="header__first">
           <a class="header__logo" href="/">
-            <img src="img/logo.svg" width="247" height="61" alt="Терра-Фрост">
+            <span class="header__in">
+              <video class="header__logotype" src="video/logo.mp4" width="52" height="61" autoplay muted loop></video>
+            </span>
+            <img class="header__bal" src="img/logo.svg" width="180" height="27" alt="Терра-Фрост">
           </a>
           <span class="header__label">Инжиниринговая компания с&nbsp;собственным производством</span>
         </div>
@@ -243,8 +246,11 @@
     <div class="header-mobile__bg"></div>
     <div class="header-mobile__inner">
       <div class="header-mobile__top">
-        <a class="header-mobile__logo" href="/">
-          <img src="img/logo.svg" width="177" height="44" alt="Терра-Фрост">
+        <a class="header__logo sec" href="/">
+          <span class="header__in">
+            <video class="header__logotype" src="video/logo.mp4" width="37" height="43" autoplay muted loop></video>
+          </span>
+          <img class="header__bal" src="img/logo.svg" width="129" height="19" alt="Терра-Фрост">
         </a>
         <div class="header-mobile__close">
           <img src="img/icons/header-close.svg" width="43" height="43" alt="Закрыть меню">
@@ -257,54 +263,12 @@
         </button>
       </form>
       <nav class="header-mobile__nav">
-        <div class="header__point">
-          <a class="header__link" href="#">О компании</a>
-        </div>
-        <div class="header__point">
-          <a class="header__link" href="#">Оборудование</a>
-          <img class="header__dropdown" src="img/icons/header-mobile-dropdown.svg" width="5" height="8"
-            alt="Раскрыть список">
-          <div class="header__sublist">
-            <a class="header__sublink" href="#">Подбор и расчет холодильного оборудования</a>
-            <a class="header__sublink" href="#">Проектирование холодильного оборудования</a>
-            <a class="header__sublink" href="#">Производство холодильного оборудования</a>
-            <a class="header__sublink" href="#">Поставка холодильного оборудования</a>
-            <a class="header__sublink" href="#">Монтаж холодильного оборудования</a>
-            <a class="header__sublink" href="#">Пуско-наладка холодильного оборудования</a>
-          </div>
-        </div>
-        <div class="header__point">
-          <a class="header__link" href="#">Услуги</a>
-          <img class="header__dropdown" src="img/icons/header-mobile-dropdown.svg" width="5" height="8"
-            alt="Раскрыть список">
-          <div class="header__sublist">
-            <a class="header__sublink" href="#">Подбор и расчет холодильного оборудования</a>
-            <a class="header__sublink" href="#">Проектирование холодильного оборудования</a>
-            <a class="header__sublink" href="#">Производство холодильного оборудования</a>
-            <a class="header__sublink" href="#">Поставка холодильного оборудования</a>
-            <a class="header__sublink" href="#">Монтаж холодильного оборудования</a>
-            <a class="header__sublink" href="#">Пуско-наладка холодильного оборудования</a>
-          </div>
-        </div>
-        <div class="header__point">
-          <a class="header__link" href="#">Проекты</a>
-        </div>
-        <div class="header__point">
-          <a class="header__link" href="#">Документация</a>
-          <img class="header__dropdown" src="img/icons/header-mobile-dropdown.svg" width="5" height="8"
-            alt="Раскрыть список">
-          <div class="header__sublist">
-            <a class="header__sublink" href="#">Подбор и расчет холодильного оборудования</a>
-            <a class="header__sublink" href="#">Проектирование холодильного оборудования</a>
-            <a class="header__sublink" href="#">Производство холодильного оборудования</a>
-            <a class="header__sublink" href="#">Поставка холодильного оборудования</a>
-            <a class="header__sublink" href="#">Монтаж холодильного оборудования</a>
-            <a class="header__sublink" href="#">Пуско-наладка холодильного оборудования</a>
-          </div>
-        </div>
-        <div class="header__point">
-          <a class="header__link" href="#">Контакты</a>
-        </div>
+        <a class="header__link" href="#">Возможности</a>
+        <a class="header__link" href="#">Тарифы</a>
+        <a class="header__link" href="#">Блог</a>
+        <a class="header__link" href="#">События</a>
+        <a class="header__link" href="#">Помощь</a>
+        <a class="header__link" href="tel:+74959990000">+7 (495) 999-00-00</a>
       </nav>
       <div class="header__rato">
         <a class="header__phone" href="tel:+74959707321">
@@ -340,52 +304,55 @@
       </div>
     </div>
   </div>
-  <section class="hero">
-    <div class="container">
-      <div class="hero__global">
-        <div class="hero__top">
-          <div class="hero__left">
-            <h1 class="hero__title">Высокотехнологичное холодильное оборудование «под ключ»</h1>
-            <p class="hero__subtitle">Полный спектр услуг для коммерческих и&nbsp;промышленных объектов</p>
-            <div class="hero__align">
-              <a class="hero__link" href="#" data-modal="firstModal" data-form-name="Мы поможем">
-                Бесплатная консультация
-                <img src="img/icons/hero-arrow.svg" width="18" height="12" alt="Перейти">
-              </a>
+  <div class="video-wrapper">
+    <video class="video-wrapper__video" src="video/hero-video.mp4" muted autoplay loop></video>
+    <section class="hero">
+      <div class="container">
+        <div class="hero__global">
+          <div class="hero__top">
+            <div class="hero__left">
+              <h1 class="hero__title">Высокотехнологичное холодильное оборудование «под ключ»</h1>
+              <p class="hero__subtitle">Полный спектр услуг для коммерческих и&nbsp;промышленных объектов</p>
+              <div class="hero__align">
+                <a class="hero__link" href="#" data-modal="firstModal" data-form-name="Мы поможем">
+                  Бесплатная консультация
+                  <img src="img/icons/hero-arrow.svg" width="18" height="12" alt="Перейти">
+                </a>
+              </div>
+            </div>
+            <div class="hero__right">
+              <div class="hero__point">
+                <img class="hero__ok" src="img/icons/hero-ok.svg" width="16" height="16" alt="Иконка">
+                Проектирование
+              </div>
+              <div class="hero__point">
+                <img class="hero__ok" src="img/icons/hero-ok.svg" width="16" height="16" alt="Иконка">
+                Производство
+              </div>
+              <div class="hero__point">
+                <img class="hero__ok" src="img/icons/hero-ok.svg" width="16" height="16" alt="Иконка">
+                Поставка
+              </div>
+              <div class="hero__point">
+                <img class="hero__ok" src="img/icons/hero-ok.svg" width="16" height="16" alt="Иконка">
+                Монтаж
+              </div>
+              <div class="hero__point">
+                <img class="hero__ok" src="img/icons/hero-ok.svg" width="16" height="16" alt="Иконка">
+                Сервисное обслуживание
+              </div>
             </div>
           </div>
-          <div class="hero__right">
-            <div class="hero__point">
-              <img class="hero__ok" src="img/icons/hero-ok.svg" width="16" height="16" alt="Иконка">
-              Проектирование
+          <div class="hero__bottom">
+            <div class="hero__capsule">
+              <p class="hero__label">Опыт работы</p>
+              <p class="hero__value"><span class="hero__big">15</span> лет</p>
             </div>
-            <div class="hero__point">
-              <img class="hero__ok" src="img/icons/hero-ok.svg" width="16" height="16" alt="Иконка">
-              Производство
-            </div>
-            <div class="hero__point">
-              <img class="hero__ok" src="img/icons/hero-ok.svg" width="16" height="16" alt="Иконка">
-              Поставка
-            </div>
-            <div class="hero__point">
-              <img class="hero__ok" src="img/icons/hero-ok.svg" width="16" height="16" alt="Иконка">
-              Монтаж
-            </div>
-            <div class="hero__point">
-              <img class="hero__ok" src="img/icons/hero-ok.svg" width="16" height="16" alt="Иконка">
-              Сервисное обслуживание
-            </div>
-          </div>
-        </div>
-        <div class="hero__bottom">
-          <div class="hero__capsule">
-            <p class="hero__label">Опыт работы</p>
-            <p class="hero__value"><span class="hero__big">15</span> лет</p>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
   <div class="gray-bg">
     <div class="place">
       <div class="container">
@@ -444,8 +411,11 @@
                     и пожеланий клиента</p>
                 </div>
                 <div class="about__item swiper-slide remove">
-                  <img class="about__logo" src="img/about-logo.png" width="186" height="166" loading="lazy"
-                    alt="Логотип">
+                  <!-- <img class="about__logo" src="img/about-logo.png" width="186" height="166" loading="lazy"
+                    alt="Логотип"> -->
+                    <div class="about__logo">
+                      <video class="about__video" src="video/about-logo.mp4" width="186" height="166" autoplay muted loop></video>
+                    </div>
                 </div>
               </div>
               <div class="swiper-pagination"></div>
@@ -830,6 +800,7 @@
     </section>
   </div>
   <section class="needed">
+    <video class="needed__video" src="video/needed-video.mp4" muted loop autoplay></video>
     <div class="needed__global">
       <div class="container">
         <div class="needed__inner">
@@ -892,6 +863,20 @@
               <img class="partners__logo" src="img/partners-8.svg" width="112" height="25" alt="Логотип">
             </div>
           </div>
+          <div class="partners__item partners__item--hidden">
+            <div class="partners__inner">
+              <img class="partners__logo" src="img/partners-5.svg" width="104" height="20" alt="Логотип">
+            </div>
+            <div class="partners__inner">
+              <img class="partners__logo" src="img/partners-6.svg" width="128" height="25" alt="Логотип">
+            </div>
+            <div class="partners__inner">
+              <img class="partners__logo" src="img/partners-7.svg" width="112" height="40" alt="Логотип">
+            </div>
+            <div class="partners__inner">
+              <img class="partners__logo" src="img/partners-8.svg" width="112" height="25" alt="Логотип">
+            </div>
+          </div>
         </div>
         <div class="partners__main">
           <h2 class="partners__title">Наши клиенты и&nbsp;партнёры</h2>
@@ -912,6 +897,20 @@
             </div>
           </div>
           <div class="partners__item">
+            <div class="partners__inner">
+              <img class="partners__logo" src="img/partners-1.svg" width="87" height="60" alt="Логотип">
+            </div>
+            <div class="partners__inner">
+              <img class="partners__logo" src="img/partners-2.svg" width="110" height="45" alt="Логотип">
+            </div>
+            <div class="partners__inner">
+              <img class="partners__logo" src="img/partners-3.png" width="135" height="34" alt="Логотип">
+            </div>
+            <div class="partners__inner">
+              <img class="partners__logo" src="img/partners-4.svg" width="156" height="39" alt="Логотип">
+            </div>
+          </div>
+          <div class="partners__item hidden">
             <div class="partners__inner">
               <img class="partners__logo" src="img/partners-1.svg" width="87" height="60" alt="Логотип">
             </div>

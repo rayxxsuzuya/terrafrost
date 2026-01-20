@@ -326,7 +326,20 @@ html {
 
 .hero {
   padding: 211px 0 88px;
-  background: url(../img/hero-bg.jpg) no-repeat center / cover;
+  position: relative;
+  z-index: 5;
+  /* background: url(../img/hero-bg.jpg) no-repeat center / cover; */
+}
+
+.video-wrapper__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .hero__top {
@@ -915,12 +928,25 @@ html {
 
 .needed {
   padding: 0 24px;
+  position: relative;
 }
 
 .needed__global {
-  background: url(../img/needed-bg.jpg) no-repeat center / cover;
   padding: 142px 0 30px;
   min-height: 756px;
+  position: relative;
+  z-index: 10;
+}
+
+.needed__video {
+  position: absolute;
+  left: 24px;
+  top: 0;
+  bottom: 0;
+  right: 24px;
+  width: calc(100% - 48px);
+  height: 100%;
+  object-fit: cover;
 }
 
 .projects__slider {
@@ -1250,6 +1276,10 @@ html {
   color: #fff;
   padding: 23.5px 55.5px 21.5px;
   background: #0a459e;
+}
+
+.footer__feedback img {
+  display: none;
 }
 
 .footer__bottom {
@@ -1716,6 +1746,7 @@ html {
 
 .device__align {
   display: flex;
+  gap: 25px;
   justify-content: flex-end;
 }
 
@@ -1725,6 +1756,38 @@ html {
   border: 1px solid #e9eefb;
   padding: 31px 27px;
   margin-top: -51px;
+  opacity: 0;
+  transition: 0.3s;
+  z-index: -10;
+}
+
+.device__window.active {
+  opacity: 1;
+  z-index: 15 ;
+}
+
+.device__snow {
+  transition: 0.3s;
+  padding: 0;
+  width: 98px;
+  height: 104px;
+  background: none;
+}
+
+.device__snow svg path {
+  transition: 0.3s;
+}
+
+.device__snow:hover svg path {
+  fill: #6B84A4;
+}
+
+.device__snow.active svg path {
+  fill: #6B84A4;
+}
+
+.device__window.active .device__snow {
+  opacity: 0;
 }
 
 .device__close {
@@ -2114,7 +2177,9 @@ html {
 .needed.second .needed__inner {
   padding: 88px 97px 30px 82px;
   min-height: 591px;
-  background: url(../img/needed-bg.jpg) no-repeat center / cover;
+  position: relative;
+  z-index: 10;
+  /* background: url(../img/needed-bg.jpg) no-repeat center / cover; */
 }
 
 .company__title {
@@ -2124,6 +2189,12 @@ html {
   letter-spacing: -0.03em;
   color: #0b0b0b;
   margin: 25px 0 35px;
+}
+
+.needed__position .needed__video {
+  right: 0;
+  left: 0;
+  width: 100%;
 }
 
 .company__image {
@@ -3302,6 +3373,74 @@ html {
 .ten .features__item {
   max-width: 317px;
 }
+
+.video-wrapper {
+  position: relative;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.header__in {
+  position: relative;
+}
+
+.header__in:before {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  height: 1px;
+}
+
+.header__logo.sec {
+  gap: 10px;
+}
+
+.partners__item--hidden {
+  display: none;
+}
+
+.about__video {
+  object-fit: none;
+  max-width: 100%;
+  height: auto;
+}
+
+.about__logo {
+  position: relative;
+}
+
+.about__logo:before {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  height: 1px;
+}
+
+.needed__position {
+  position: relative;
+}
+
+.projs .projs__item:nth-child(n+10) {
+    display: none;
+  }
+
+ .projs  .projs__block.show-all .projs__item {
+    display: block;
+  }
+
+  .projs__link.hidden {
+    display: none;
+  }
 
 @media (max-width: 1360px) {
   .header__label {
@@ -4535,7 +4674,7 @@ html {
 
   .needed.second .needed__inner {
     padding: 345px 15px 27px;
-    background-image: url(../img/needed-bg-mobile.jpg);
+    /* background-image: url(../img/needed-bg-mobile.jpg); */
   }
 
   .needed.second .needed__global {
@@ -4845,8 +4984,30 @@ html {
   }
 
   .ten .features__item {
-  max-width: initial;
-}
+    max-width: initial;
+  }
+
+  .needed__video {
+    left: 0;
+    right: 0;
+    width: 100%;
+    transform: scaleX(-1);
+  }
+
+
+  .footer__feedback img {
+    display: block;
+  }
+
+  .projs__item:nth-child(n+7) {
+      display: none;
+    }
+
+    /* Показываем все при активном show-all */
+    .projs__block.show-all .projs__item {
+      display: block;
+    }
+
 }
 
 @media (max-width: 550px) {
@@ -4919,7 +5080,7 @@ html {
   }
 
   .needed__global {
-    background-image: url(../img/needed-bg-mobile.jpg);
+    /* background-image: url(../img/needed-bg-mobile.jpg); */
   }
 
   .projs .projs__block {
@@ -5101,6 +5262,47 @@ html {
 
   .modal {
     padding: 0;
+  }
+
+  .header__logo {
+    gap: 10px;
+  }
+
+  .header__logo .header__in {
+    width: 37px;
+  }
+
+  .header__logo .header__in {
+    width: 37px;
+  }
+
+  .header__logo .header__bal {
+    width: 128px;
+  }
+
+  .header__logotype {
+    max-width: 100%;
+  }
+
+  .header__in {
+    width: 37px;
+    height: 43px;
+    overflow: hidden;
+  }
+
+  .header__logotype {
+    margin-top: -8px;
+  }
+
+  .header__in:before {
+    left: initial;
+    width: 1px;
+    height: 43px;
+    top: 0;
+  }
+
+  .header__logo.sec .header__logotype {
+    margin-top: 0;
   }
 }
 
