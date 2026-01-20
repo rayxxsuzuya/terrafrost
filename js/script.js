@@ -169,42 +169,44 @@ for (let i = 0; i < acc.length; i++) {
 
 if (document.querySelector('.device__snow')) {
   const snowButtons = document.querySelectorAll('.device__snow');
-const deviceWindow = document.querySelector('.device__window');
-const closeButton = document.querySelector('.device__close');
+  const deviceWindow = document.querySelector('.device__window');
+  const closeButton = document.querySelector('.device__close');
 
-function checkActiveSnowflakes() {
-  const hasActive = Array.from(snowButtons).some(btn => btn.classList.contains('active'));
+  function checkActiveSnowflakes() {
+    const hasActive = Array.from(snowButtons).some(btn => btn.classList.contains('active'));
 
-  if (hasActive) {
-    deviceWindow.classList.add('active');
-  } else {
-    deviceWindow.classList.remove('active');
+    if (hasActive) {
+      deviceWindow.classList.add('active');
+    } else {
+      deviceWindow.classList.remove('active');
+    }
   }
-}
 
-snowButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    button.classList.toggle('active');
-    checkActiveSnowflakes();
+  snowButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      button.classList.toggle('active');
+      checkActiveSnowflakes();
+    });
   });
-});
 
-closeButton.addEventListener('click', () => {
-  deviceWindow.classList.remove('active');
-  snowButtons.forEach(btn => btn.classList.remove('active'));
-});
+  closeButton.addEventListener('click', () => {
+    deviceWindow.classList.remove('active');
+    snowButtons.forEach(btn => btn.classList.remove('active'));
+  });
 }
 
-const showMoreBtn = document.getElementById('showMoreBtn');
-const projsBlock = document.getElementById('projsBlock');
+if (document.getElementById('showMoreBtn')) {
+  const showMoreBtn = document.getElementById('showMoreBtn');
+  const projsBlock = document.getElementById('projsBlock');
 
-showMoreBtn.addEventListener('click', function (e) {
-  e.preventDefault();
+  showMoreBtn.addEventListener('click', function (e) {
+    e.preventDefault();
 
-  projsBlock.classList.add('show-all');
+    projsBlock.classList.add('show-all');
 
-  showMoreBtn.classList.add('hidden');
-});
+    showMoreBtn.classList.add('hidden');
+  });
+}
 
 const searchButton = document.querySelector('.header__search');
 const searchBlock = document.querySelector('.header-search');
