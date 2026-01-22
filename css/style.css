@@ -1763,7 +1763,7 @@ html {
 
 .device__window.active {
   opacity: 1;
-  z-index: 15 ;
+  z-index: 15;
 }
 
 .device__snow {
@@ -3422,8 +3422,10 @@ html {
   bottom: 5px;
   left: 0;
   right: 0;
-  background-color: #fff;
-  height: 1px;
+  top: 0;
+  z-index: 10;
+  border: 1px solid #fff;
+  
 }
 
 .needed__position {
@@ -3431,16 +3433,45 @@ html {
 }
 
 .projs .projs__item:nth-child(n+10) {
-    display: none;
-  }
+  display: none;
+}
 
- .projs  .projs__block.show-all .projs__item {
-    display: block;
-  }
+.projs .projs__block.show-all .projs__item {
+  display: block;
+}
 
-  .projs__link.hidden {
-    display: none;
-  }
+.projs__link.hidden {
+  display: none;
+}
+
+.company__image {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.features__logo {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
+
+.features__ito {
+  position: relative;
+}
+
+.features__ito:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 4px;
+  right: 0;
+  z-index: 10;
+  border: 1px solid #f2f7fc;
+
+}
 
 @media (max-width: 1360px) {
   .header__label {
@@ -3656,6 +3687,11 @@ html {
   .service__label {
     height: auto;
   }
+
+  .about__logo:before {
+  bottom: 4px;
+  
+}
 
   .services__block {
     grid-template-columns: 1fr 1fr;
@@ -5000,13 +5036,13 @@ html {
   }
 
   .projs__item:nth-child(n+7) {
-      display: none;
-    }
+    display: none;
+  }
 
-    /* Показываем все при активном show-all */
-    .projs__block.show-all .projs__item {
-      display: block;
-    }
+  /* Показываем все при активном show-all */
+  .projs__block.show-all .projs__item {
+    display: block;
+  }
 
 }
 
